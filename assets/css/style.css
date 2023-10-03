@@ -6270,4 +6270,5 @@ form.search-box .search-form a{
     font-size: 50px;
     color: red;
     cursor: pointer;
+    opacity: 1.5!important;
 }
