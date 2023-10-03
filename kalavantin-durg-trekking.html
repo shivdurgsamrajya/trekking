@@ -323,40 +323,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 		<!-- Jquery Plugins, main Jquery -->	
       <script src="./assets/js/plugins.js"></script>
       <script src="./assets/js/main.js"></script>
-        <script>
-		// Get references to the modal, close button, and modal image
-var modal = document.querySelector('.modal');
-var closeButton = document.querySelector('.close');
-var modalImage = document.querySelector('#modal-image');
 
-// Function to open the modal
-function openModal(event) {
-    var imageUrl = event.target.getAttribute('data-image');
-    modalImage.src = imageUrl;
-    modal.style.display = 'block';
-}
-
-// Function to close the modal
-function closeModal() {
-    modal.style.display = 'none';
-}
-
-// Add click event listeners to all open-modal links
-var openButtons = document.querySelectorAll('.open-modal');
-openButtons.forEach(function(button) {
-    button.addEventListener('click', openModal);
-});
-
-// Add click event listener to the close button
-closeButton.addEventListener('click', closeModal);
-
-// Close the modal if the user clicks outside the image
-window.addEventListener('click', function(event) {
-    if (event.target === modal) {
-        closeModal();
-    }
-});
-
-	</script>
 </body>
 </html>
