@@ -313,8 +313,8 @@ xhr.onreadystatechange = function () {
                 var link = document.createElement('a');
                 link.href = result.url;
                 link.textContent = result.title;
-		link.className = 'show-line-2';
-		link.className = 'a-color';
+		link.classList.add('show-line-2');
+                link.classList.add('a-color');
                 listItem.appendChild(link);
                 searchResults.appendChild(listItem);
 
