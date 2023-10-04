@@ -297,6 +297,11 @@ xhr.onreadystatechange = function () {
 
         searchInput.addEventListener('input', function () {
             var query = searchInput.value.toLowerCase();
+	    if (query === '') {
+                // If the input is empty, clear the search results
+                searchResults.innerHTML = '';
+                return; // Exit the function
+            }
             var matchingResults = searchData.filter(function (item) {
                 return item.title.toLowerCase().includes(query);
             });
