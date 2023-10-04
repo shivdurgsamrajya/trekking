@@ -251,18 +251,18 @@
                   </aside>
                   <aside class="single_sidebar_widget search_widget gmd-5">
                      <form action="#">
-                        <div class="form-group">
-                           <div class="input-group mb-3">
-                              <input type="text" class="form-control" placeholder='Search Keyword'
-                                 onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Keyword'">
-                              <div class="input-group-append">
-                                 <button class="btns" type="button"><i class="ti-search"></i></button>
-                              </div>
-                           </div>
-                        </div>
-                        <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
-                           type="submit">Search</button>
-                     </form>
+			<div class="form-group">
+			    <div class="input-group mb-3">
+				<input type="text" id="searchInput" class="form-control" placeholder='Search More Blogs..'
+				    onfocus="this.placeholder = ''"
+				    onblur="this.placeholder = 'Search More Blogs..'">
+				<div class="input-group-append">
+					<button class="btns" type="button"><i class="ti-search"></i></button>
+				</div>					                                            
+			    </div>
+			</div>
+			<ul id="searchResults" style="color:black;"></ul>
+		    </form>
                   </aside>
 <!--                   <aside class="single_sidebar_widget popular_post_widget gmd-5">
                      <h3 class="widget_title">Recent Post</h3>
@@ -354,6 +354,64 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 		<!-- Jquery Plugins, main Jquery -->	
       <script src="./assets/js/plugins.js"></script>
       <script src="./assets/js/main.js"></script>
-
+	<script>		
+		// Load the CSV file using XMLHttpRequest
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', 'blogs.csv', true);
+		xhr.onreadystatechange = function () {
+		    if (xhr.readyState === 4 && xhr.status === 200) {
+		        var data = xhr.responseText;
+		        var rows = data.split('\n');
+		
+		        var searchData = [];
+		
+		        // Parse the CSV data
+		        for (var i = 1; i < rows.length; i++) {
+		            var columns = rows[i].split(',');
+		            var title = columns[0];
+		            var url = columns[1];
+		
+		            searchData.push({ title: title, url: url });
+		        }
+		
+		        // Handle search input
+		        var searchInput = document.getElementById('searchInput');
+		        var searchResults = document.getElementById('searchResults');
+		
+		        searchInput.addEventListener('input', function () {
+		            var query = searchInput.value.toLowerCase();
+		            if (query === '') {
+		                // If the input is empty, clear the search results
+		                searchResults.innerHTML = '';
+		                return; // Exit the function
+		            }
+		            var matchingResults = searchData.filter(function (item) {
+		                return item.title.toLowerCase().includes(query);
+		            });
+		
+		            // Display search results
+		            searchResults.innerHTML = '';
+		            matchingResults.forEach(function (result, index) {
+		                var listItem = document.createElement('li');
+		                var link = document.createElement('a');
+		                link.href = result.url;
+		                link.textContent = result.title;
+		                link.classList.add('show-line-2');
+		                link.classList.add('a-color');
+		                listItem.appendChild(link);
+		                searchResults.appendChild(listItem);
+		
+		                if (index < matchingResults.length - 1) {
+		                    // Add <hr> element after <li> for all but the last result
+		                    var hr = document.createElement('hr');
+		                    hr.className = 'hr-margin';
+		                    searchResults.appendChild(hr);
+		                }
+		            });
+		        });
+		    }
+		};
+		xhr.send();
+	</script>
 </body>
 </html>
