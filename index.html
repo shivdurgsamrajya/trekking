@@ -308,8 +308,13 @@ xhr.onreadystatechange = function () {
                 var link = document.createElement('a');
                 link.href = result.url;
                 link.textContent = result.title;
+		link.className = 'test';
                 listItem.appendChild(link);
                 searchResults.appendChild(listItem);
+
+		var hr = document.createElement('hr');
+		hr.className = 'hr-margin';
+                searchResults.appendChild(hr);
             });
         });
     }
