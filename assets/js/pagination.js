@@ -146,7 +146,7 @@ const articles = [
 
 ];
 
-const articlesPerPage = 3;
+const articlesPerPage = 5;
 let currentPage = 1;
 
 const articleContainer = document.getElementById("article-container");
