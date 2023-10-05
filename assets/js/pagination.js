@@ -159,11 +159,18 @@ function displayArticles(page) {
   const displayedArticles = articles.slice(startIndex, endIndex);
 
   articleContainer.innerHTML = "";
-  displayedArticles.forEach(article => {
-    // Append each article to the container
-    articleContainer.appendChild(article);
+
+  displayedArticles.forEach(articleHTML => {
+    // Parse the HTML string and create a DOM node
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(articleHTML, 'text/html');
+    const articleNode = doc.body.firstChild;
+
+    // Append the DOM node to the container
+    articleContainer.appendChild(articleNode);
   });
 }
+
 
 function updatePaginationButtons() {
   prevButton.disabled = currentPage === 1;
