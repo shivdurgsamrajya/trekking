@@ -146,12 +146,13 @@ const articles = [
 
 ];
 
-const articlesPerPage = 3; // Change this to the number of articles you want to display per page
+const articlesPerPage = 3;
 let currentPage = 1;
 
 const articleContainer = document.getElementById("article-container");
 const prevButton = document.getElementById("prev-page");
 const nextButton = document.getElementById("next-page");
+const pagesContainer = document.getElementById("pages-container");
 
 function displayArticles(page) {
   const startIndex = (page - 1) * articlesPerPage;
@@ -159,22 +160,33 @@ function displayArticles(page) {
   const displayedArticles = articles.slice(startIndex, endIndex);
 
   articleContainer.innerHTML = "";
-
   displayedArticles.forEach(articleHTML => {
-    // Parse the HTML string and create a DOM node
     const parser = new DOMParser();
-    const doc = parser.parseFromString(articleHTML, 'text/html');
+    const doc = parser.parseFromString(articleHTML, "text/html");
     const articleNode = doc.body.firstChild;
-
-    // Append the DOM node to the container
     articleContainer.appendChild(articleNode);
   });
 }
 
-
 function updatePaginationButtons() {
   prevButton.disabled = currentPage === 1;
   nextButton.disabled = currentPage === Math.ceil(articles.length / articlesPerPage);
+}
+
+function createPageButtons() {
+  const pageCount = Math.ceil(articles.length / articlesPerPage);
+  pagesContainer.innerHTML = "";
+
+  for (let i = 1; i <= pageCount; i++) {
+    const pageButton = document.createElement("button");
+    pageButton.textContent = i;
+    pageButton.addEventListener("click", () => {
+      currentPage = i;
+      displayArticles(currentPage);
+      updatePaginationButtons();
+    });
+    pagesContainer.appendChild(pageButton);
+  }
 }
 
 prevButton.addEventListener("click", () => {
@@ -196,3 +208,5 @@ nextButton.addEventListener("click", () => {
 // Initial page load
 displayArticles(currentPage);
 updatePaginationButtons();
+createPageButtons();
+
