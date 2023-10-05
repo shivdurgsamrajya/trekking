@@ -142,6 +142,22 @@ const articles = [
                                   Tung Fort has a rich historical background, once serving as a strategic outpost for the Maratha Empire. It played a pivotal role during various battles and is a symbol of Maratha valor.
                                 </p>                                
                             </div>
+                        </article>`,
+			`<article class="row blog_item gmd-5">
+                            <div class="blog_item_img col-sm-6">
+                                <img class="card-img rounded-0" src="assets/img/fort/janjira/janjira-photos.jpg" alt="janjira fort trekking" height="100%;">                               
+                            </div>
+                            <div class="blog_details col-sm-6">
+                                <a class="d-inline-block" href="janjira-fort-trekking.html">
+                                    <h2 class="show-line-1">Discovering Janjira Fort:A Historical Marvel in Arabian Sea</h2>
+                                </a>
+                                <ul class="blog-info-link">
+                                    <li><a href="#"><i class="fa fa-tags"></i> Travel, Trekking, Murud-Janjira Fort</a></li>
+                                </ul>
+                                <p class="show-line-3">
+                                  Janjira Fort has a rich history that traces its roots back to the 15th century. It was originally constructed by a local chieftain and later came under the control of the Siddis, a community of African descent. The fort's strategic location made it a formidable naval stronghold, ensuring its significance in maritime trade.
+                                </p>                                
+                            </div>
                         </article>`
 
 ];
