@@ -2683,7 +2683,25 @@ hr{
     border:1px solid #f0e9ff;
     margin-right:10px
 }
+.blog-pagination .page-link1{
+    font-size:14px;
+    position:relative;
+    display:block;
+    padding:0;
+    text-align:center;
+    margin-left:-1px;
+    line-height:45px;
+    width:90px;
+    height:45px;
+    border-radius:0 !important;
+    color:#8a8a8a;
+    border:1px solid #f0e9ff;
+    margin-right:10px
+}
 .blog-pagination .page-link i,.blog-pagination .page-link span{
+    font-size:13px
+}
+.blog-pagination .page-link1 i,.blog-pagination .page-link1 span{
     font-size:13px
 }
 .blog-pagination .page-item.active .page-link{
@@ -2691,7 +2709,15 @@ hr{
     border-color:#f0e9ff;
     color:#888888
 }
+.blog-pagination .page-item.active .page-link1{
+    background-color:#fbf9ff;
+    border-color:#f0e9ff;
+    color:#888888
+}
 .blog-pagination .page-item:last-child .page-link{
+    margin-right:0
+}
+.blog-pagination .page-item:last-child .page-link1{
     margin-right:0
 }
 .single-post-area .blog_details{
