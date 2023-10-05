@@ -11,7 +11,7 @@ const articles = [
                                     <li><a href="#"><i class="fa fa-tags"></i> Travel, Trekking, Kalavantin Durg</a></li>
                                 </ul>
                                 <p class="show-line-3">
-                                  Kalavantin Durg, also known as Kalavantin's Fort, is a formidable hill fort located in the Raigad district of Maharashtra, India. The fort is perched at an elevation of approximately 2,300 feet above sea level and is a part of the Sahyadri mountain range. It stands adjacent to another famous fort, Prabalgad, and together they offer a trekking experience like no other. Kalavantin Durg is renowned for its steep and narrow rock-cut steps that lead to the summit, making it a challenging yet rewarding trek.
+                                  Kalavantin Durg, also known as Kalavantins Fort, is a formidable hill fort located in the Raigad district of Maharashtra, India. The fort is perched at an elevation of approximately 2,300 feet above sea level and is a part of the Sahyadri mountain range. It stands adjacent to another famous fort, Prabalgad, and together they offer a trekking experience like no other. Kalavantin Durg is renowned for its steep and narrow rock-cut steps that lead to the summit, making it a challenging yet rewarding trek.
                                 </p>                                
                             </div>
                         </article>',
@@ -43,7 +43,7 @@ const articles = [
                                     <li><a href="#"><i class="fa fa-tags"></i> Travel, Trekking, Raigad Fort</a></li>
                                 </ul>
                                 <p class="show-line-3">
-                                  Raigad Fort, originally known as "Rairi," holds immense historical significance. It was the capital of the Maratha Empire under the visionary Chhatrapati Shivaji Maharaj. The fort stands as a testament to India's rich heritage and the valor of its people.
+                                  Raigad Fort, originally known as "Rairi," holds immense historical significance. It was the capital of the Maratha Empire under the visionary Chhatrapati Shivaji Maharaj. The fort stands as a testament to Indias rich heritage and the valor of its people.
                                 </p>                                
                             </div>
                         </article>',
@@ -75,7 +75,7 @@ const articles = [
                                     <li><a href="#"><i class="fa fa-tags"></i> Travel, Trekking, Lohgad Fort</a></li>
                                 </ul>
                                 <p class="show-line-3">
-                                  Lohgad, also known as "Iron Fort," has a rich historical background dating back to the 16th century. Built by the Maratha Empire, this fort holds immense significance due to its strategic location. Let's delve deeper into the historical tapestry of Lohgad.
+                                  Lohgad, also known as "Iron Fort," has a rich historical background dating back to the 16th century. Built by the Maratha Empire, this fort holds immense significance due to its strategic location. Lets delve deeper into the historical tapestry of Lohgad.
                                 </p>                                
                             </div>
                         </article>',
