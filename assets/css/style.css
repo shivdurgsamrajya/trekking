@@ -2709,11 +2709,7 @@ hr{
     border-color:#f0e9ff;
     color:#888888
 }
-.blog-pagination .page-item.active .page-link1{
-    background-color:#fbf9ff;
-    border-color:#f0e9ff;
-    color:#888888
-}
+
 .blog-pagination .page-item:last-child .page-link{
     margin-right:0
 }
