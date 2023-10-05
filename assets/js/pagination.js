@@ -142,7 +142,7 @@ const articles = [
                                   Tung Fort has a rich historical background, once serving as a strategic outpost for the Maratha Empire. It played a pivotal role during various battles and is a symbol of Maratha valor.
                                 </p>                                
                             </div>
-                        </article>`
+                        </article>`;
 
 ];
 
