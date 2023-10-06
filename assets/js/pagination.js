@@ -158,6 +158,24 @@ const articles = [
                                   Janjira Fort has a rich history that traces its roots back to the 15th century. It was originally constructed by a local chieftain and later came under the control of the Siddis, a community of African descent. The fort's strategic location made it a formidable naval stronghold, ensuring its significance in maritime trade.
                                 </p>                                
                             </div>
+                        </article>`,
+			`<article class="row blog_item gmd-5">
+                            <div class="blog_item_img col-sm-6">
+                                <img class="card-img rounded-0" src="assets/img/fort/vishalgad/vishalgad-fort-photos.jpg" alt="vishalgad fort trekking" height="100%;">                               
+                            </div>
+                            <div class="blog_details col-sm-6">
+                                <a class="d-inline-block" href="vishalgad-fort-trekking.html">
+                                    <h2 class="show-line-1">Vishalgad Fort Trekking : Rich History and Natural Beauty</h2>
+                                </a>
+                                <ul class="blog-info-link">
+                                    <li><a href="#"><i class="fa fa-tags"></i> Travel, Trekking, Vishalgad Fort</a></li>
+                                </ul>
+                                <p class="show-line-3">
+                                  Vishalgad is approximately 75 kilometers away from Kolhapur. You can hire a taxi or drive yourself to the base village of Vishalgad, which is Bhuibawada.
+
+The journey takes around 2-3 hours, offering scenic views of the Western Ghats.
+                                </p>                                
+                            </div>
                         </article>`
 
 ];
