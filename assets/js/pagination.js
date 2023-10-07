@@ -204,6 +204,17 @@ const prevButton = document.getElementById("prev-page");
 const nextButton = document.getElementById("next-page");
 const pagesContainer = document.getElementById("pages-container");
 
+// Shuffle the articles array randomly
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
+// Shuffle the articles array before displaying
+shuffleArray(articles);
+
 function displayArticles(page) {
   const startIndex = (page - 1) * articlesPerPage;
   const endIndex = startIndex + articlesPerPage;
