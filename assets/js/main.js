@@ -262,7 +262,9 @@ openButtons.forEach(function(button) {
 });
 
 // Add click event listener to the close button
+if(closeButton){
 closeButton.addEventListener('click', closeModal);
+} else {}
 
 // Close the modal if the user clicks outside the image
 window.addEventListener('click', function(event) {
