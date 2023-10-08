@@ -202,7 +202,7 @@ let currentPage = 1;
 const articleContainer = document.getElementById("article-container");
 const prevButton = document.getElementById("prev-page");
 const nextButton = document.getElementById("next-page");
-const pagesContainer = document.getElementById("pages-container");
+// const pagesContainer = document.getElementById("pages-container");
 
 // Shuffle the articles array randomly
 function shuffleArray(array) {
@@ -236,7 +236,7 @@ function updatePaginationButtons() {
 
 function createPageButtons() {
   const pageCount = Math.ceil(articles.length / articlesPerPage);
-  pagesContainer.innerHTML = "";
+  // pagesContainer.innerHTML = "";
 
   for (let i = 1; i <= pageCount; i++) {
     const pageButton = document.createElement("button");
@@ -246,7 +246,7 @@ function createPageButtons() {
       displayArticles(currentPage);
       updatePaginationButtons();
     });
-    pagesContainer.appendChild(pageButton);
+    // pagesContainer.appendChild(pageButton);
   }
 }
 
