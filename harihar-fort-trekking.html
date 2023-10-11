@@ -285,7 +285,7 @@
 
                      </ul>
                   </aside>                  
-                  <iframe src="recent-posts.html" width="100%"></iframe>
+                  <aside id="recen-post"></aside>
                </div>
             </div>
          </div>
@@ -359,5 +359,18 @@
       <script src="assets/js/plugins.js"></script>
       <script src="assets/js/main.js"></script>
 <script src="assets/js/search.js"></script>
+	<script>
+    // Target the container where you want to insert the external content
+    const container = document.getElementById("recent-post");
+
+    // Fetch the external HTML file
+    fetch("recent-posts.html")
+        .then(response => response.text())
+        .then(data => {
+            // Insert the content into the container
+            container.innerHTML = data;
+        });
+</script>
+
 </body>
 </html>
