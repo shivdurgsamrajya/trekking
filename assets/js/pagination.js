@@ -192,6 +192,22 @@ The journey takes around 2-3 hours, offering scenic views of the Western Ghats.
                                  Malhargad, also known as Sonori Fort, has a rich historical significance dating back to the Maratha Empire.
                                 </p>                                
                             </div>
+                        </article>`,
+			`<article class="row blog_item gmd-5">
+                            <div class="blog_item_img col-sm-6">
+                                <img class="card-img rounded-0" src="assets/img/fort/sinhgad/sinhagad-fort-photo.jpg" alt="Sinhagad fort trekking" height="100%;">                               
+                            </div>
+                            <div class="blog_details col-sm-6">
+                                <a class="d-inline-block" href="sinhgad-fort-trekking.html">
+                                    <h2 class="show-line-1">Exploring the Magnificence of Sinhgad Fort Trekking</h2>
+                                </a>
+                                <ul class="blog-info-link">
+                                    <li><a href="#"><i class="fa fa-tags"></i> Travel, Trekking, Sinhgad Fort</a></li>
+                                </ul>
+                                <p class="show-line-3">
+                                 Embark on an adventure through history and nature with Sinhgad Fort Trekking. Explore its historical significance, FAQs, and more. An unforgettable trekking experience awaits.
+                                </p>                                
+                            </div>
                         </article>`
 
 ];
