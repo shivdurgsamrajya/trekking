@@ -285,7 +285,7 @@
 
                      </ul>
                   </aside>                  
-                  <aside id="recen-post"></aside>
+                  <aside id="recent-post" class="single_sidebar_widget popular_post_widget"></aside>
                </div>
             </div>
          </div>
@@ -358,19 +358,8 @@
 		<!-- Jquery Plugins, main Jquery -->	
       <script src="assets/js/plugins.js"></script>
       <script src="assets/js/main.js"></script>
-<script src="assets/js/search.js"></script>
-	<script>
-    // Target the container where you want to insert the external content
-    const container = document.getElementById("recent-post");
+      <script src="assets/js/search.js"></script>
 
-    // Fetch the external HTML file
-    fetch("recent-posts.html")
-        .then(response => response.text())
-        .then(data => {
-            // Insert the content into the container
-            container.innerHTML = data;
-        });
-</script>
 
 </body>
 </html>
