@@ -273,3 +273,14 @@ window.addEventListener('click', function(event) {
     }
 });
 
+
+
+    const container = document.getElementById("recent-post");
+
+    // Fetch the external HTML file
+    fetch("recent-posts.html")
+        .then(response => response.text())
+        .then(data => {
+            // Insert the content into the container
+            container.innerHTML = data;
+        });
